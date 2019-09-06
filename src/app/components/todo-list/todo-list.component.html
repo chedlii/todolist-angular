@@ -1,0 +1,17 @@
+<div>
+    <app-add-todo [titleForUpdate]="titleForUpdate" [todos]="todos" (add)="addTodo($event)">
+
+
+
+    </app-add-todo>
+
+    <app-todo-item *ngFor="let todo of todos" [todo]="todo" (deleteTodo)="onDelete($event)"
+        (changeClass)="onChangeClass($event)" (updateTodo)="onUpdate($event)">
+
+
+
+    </app-todo-item>
+
+
+
+</div>
